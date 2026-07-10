@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Safari Itineraries — Eascope Expeditions</title>
+  <meta name="description" content="Browse Eascope Expeditions' safari packages — game drives, gorilla trekking, Kilimanjaro, Zanzibar beach holidays and cultural tours."/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="author" content="Eascope Expeditions"/>
+  <meta name="theme-color" content="#1a3a1f"/>
+  <link rel="canonical" href="https://eascopeexpeditions.com/itineraries.html"/>
+  <link rel="icon" type="image/png" href="images/logo.png"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="Eascope Expeditions"/>
+  <meta property="og:title" content="Safari Itineraries — Eascope Expeditions"/>
+  <meta property="og:description" content="Safari packages — game drives, gorilla trekking, Kilimanjaro, Zanzibar beach holidays and cultural tours."/>
+  <meta property="og:url" content="https://eascopeexpeditions.com/itineraries.html"/>
+  <meta property="og:image" content="https://eascopeexpeditions.com/images/wildebeest-migration.jpg"/>
+  <meta property="og:image:alt" content="Great Migration safari in the Serengeti"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Safari Itineraries — Eascope Expeditions"/>
+  <meta name="twitter:description" content="Safari packages — game drives, gorilla trekking, Kilimanjaro, Zanzibar beach holidays and cultural tours."/>
+  <meta name="twitter:image" content="https://eascopeexpeditions.com/images/wildebeest-migration.jpg"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<div id="preloader">
+  <div class="pre-logo">Eascope</div>
+  <div class="pre-sub">Expeditions</div>
+  <div class="pre-bar"></div>
+</div>
+
+<div class="wa-float">
+  <a href="https://wa.me/255714893326" target="_blank" rel="noopener" class="wa-btn">
+    <i class="fab fa-whatsapp"></i> Chat with Us
+  </a>
+</div>
+
+<nav class="navbar scrolled">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Eascope" onerror="this.style.display='none'">
+      <div class="logo-txt">
+        <span class="logo-name">Eascope</span>
+        <span class="logo-tag">Expeditions</span>
+      </div>
+    </a>
+    <ul class="nav-menu">
+      <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Destinations <i class="fas fa-chevron-down nav-arrow"></i></a>
+        <div class="drop-menu">
+          <a href="destinations/tanzania.html" class="drop-link"><img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=120&q=70" alt="Tanzania"/>Tanzania</a>
+          <a href="destinations/kenya.html" class="drop-link"><img src="https://images.unsplash.com/photo-1614531341773-3bff15b7f2d3?w=120&q=70" alt="Kenya"/>Kenya</a>
+          <a href="destinations/uganda.html" class="drop-link"><img src="https://images.unsplash.com/photo-1611348586840-ea9872d33411?w=120&q=70" alt="Uganda"/>Uganda</a>
+          <a href="destinations/rwanda.html" class="drop-link"><img src="https://images.unsplash.com/photo-1565967511849-76a60a516170?w=120&q=70" alt="Rwanda"/>Rwanda</a>
+        </div>
+      </li>
+      <li class="nav-item"><a href="itineraries.html" class="nav-link active">Itineraries</a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link nav-cta">Book Now</a></li>
+    </ul>
+    <button class="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-overlay"></div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <img src="images/wildebeest-migration.jpg" alt="Safari Itineraries"/>
+  <div class="page-hero-ov"></div>
+  <div class="page-hero-cnt">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> <span>/</span>
+      <span>Itineraries</span>
+    </div>
+    <div class="sec-eyebrow"><span>Our Packages</span></div>
+    <h1>Safari Itineraries</h1>
+    <p>Handcrafted adventures for every traveler — from 3-day escapes to epic 21-day expeditions.</p>
+  </div>
+</div>
+
+<!-- FILTER BAR -->
+<div style="background:var(--white);padding:28px 0;border-bottom:1px solid rgba(0,0,0,.06);position:sticky;top:75px;z-index:100">
+  <div class="container">
+    <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+      <button onclick="filterPackages(this,'all')" class="filter-btn active-filter" style="padding:9px 22px;border-radius:50px;background:var(--gold);color:var(--dark);font-size:.75rem;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;border:2px solid var(--gold);transition:all .3s">All Packages</button>
+      <button onclick="filterPackages(this,'safari')" class="filter-btn" style="padding:9px 22px;border-radius:50px;background:transparent;color:var(--text);font-size:.75rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;border:2px solid rgba(0,0,0,.15);transition:all .3s">Safari & Game Drive</button>
+      <button onclick="filterPackages(this,'gorilla')" class="filter-btn" style="padding:9px 22px;border-radius:50px;background:transparent;color:var(--text);font-size:.75rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;border:2px solid rgba(0,0,0,.15);transition:all .3s">Gorilla Trekking</button>
+      <button onclick="filterPackages(this,'beach')" class="filter-btn" style="padding:9px 22px;border-radius:50px;background:transparent;color:var(--text);font-size:.75rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;border:2px solid rgba(0,0,0,.15);transition:all .3s">Beach & Zanzibar</button>
+      <button onclick="filterPackages(this,'mountain')" class="filter-btn" style="padding:9px 22px;border-radius:50px;background:transparent;color:var(--text);font-size:.75rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;border:2px solid rgba(0,0,0,.15);transition:all .3s">Kilimanjaro</button>
+      <button onclick="filterPackages(this,'culture')" class="filter-btn" style="padding:9px 22px;border-radius:50px;background:transparent;color:var(--text);font-size:.75rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;border:2px solid rgba(0,0,0,.15);transition:all .3s">Cultural Tours</button>
+    </div>
+  </div>
+</div>
+
+<!-- PACKAGES -->
+<section class="section section-cream">
+  <div class="container">
+    <div class="itin-list" id="packagesContainer">
+
+      <!-- Package 1 -->
+      <div class="itin-card reveal" data-cat="safari">
+        <div class="itin-img-col">
+          <img src="images/wildebeest-migration.jpg" alt="Serengeti Safari — Great Migration"/>
+          <span class="itin-badge">Best Seller</span>
+        </div>
+        <div class="itin-body">
+          <div class="itin-type">Safari & Wildlife</div>
+          <h2 class="itin-title">7-Day Classic Serengeti & Ngorongoro Safari</h2>
+          <p class="itin-desc">The ultimate Tanzania wildlife circuit. Track the Big Five through the legendary Serengeti, descend into the Ngorongoro Crater's wildlife paradise, and experience the magic of Tarangire's elephant herds and ancient baobabs.</p>
+          <div class="itin-meta">
+            <div class="itin-meta-item"><i class="fas fa-calendar"></i> 7 Days / 6 Nights</div>
+            <div class="itin-meta-item"><i class="fas fa-map-marker-alt"></i> Tanzania</div>
+            <div class="itin-meta-item"><i class="fas fa-users"></i> 2–12 People</div>
+            <div class="itin-meta-item"><i class="fas fa-star" style="color:var(--gold)"></i> 5.0 Rating</div>
+          </div>
+          <div class="itin-foot">
+            <div class="itin-price">From $2,490 <span>/ per person</span></div>
+            <a href="contact.html" class="btn-gold" style="font-size:.75rem;padding:13px 28px">Book This Safari <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Package 2 -->
+      <div class="itin-card reveal" data-cat="gorilla">
+        <div class="itin-img-col">
+          <img src="https://images.unsplash.com/photo-1611348586840-ea9872d33411?w=800&q=80&auto=format&fit=crop" alt="Gorilla Trekking"/>
+          <span class="itin-badge">Bucket List</span>
+        </div>
+        <div class="itin-body">
+          <div class="itin-type">Gorilla Trekking</div>
+          <h2 class="itin-title">6-Day Uganda Gorilla & Chimp Adventure</h2>
+          <p class="itin-desc">The ultimate primate experience. Trek to mountain gorillas in Bwindi Impenetrable Forest, track chimpanzees in Kibale Forest, and enjoy wildlife-rich boat safaris on the Kazinga Channel in Queen Elizabeth National Park.</p>
+          <div class="itin-meta">
+            <div class="itin-meta-item"><i class="fas fa-calendar"></i> 6 Days / 5 Nights</div>
+            <div class="itin-meta-item"><i class="fas fa-map-marker-alt"></i> Uganda</div>
+            <div class="itin-meta-item"><i class="fas fa-users"></i> 2–8 People</div>
+            <div class="itin-meta-item"><i class="fas fa-star" style="color:var(--gold)"></i> 5.0 Rating</div>
+          </div>
+          <div class="itin-foot">
+            <div class="itin-price">From $3,200 <span>/ per person</span></div>
+            <a href="contact.html" class="btn-gold" style="font-size:.75rem;padding:13px 28px">Book This Safari <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Package 3 -->
+      <div class="itin-card reveal" data-cat="beach safari">
+        <div class="itin-img-col">
+          <img src="images/zanzibar-the-rock.jpg" alt="Zanzibar — The Rock"/>
+          <span class="itin-badge">Popular Combo</span>
+        </div>
+        <div class="itin-body">
+          <div class="itin-type">Safari + Beach</div>
+          <h2 class="itin-title">10-Day Tanzania Safari & Zanzibar Beach</h2>
+          <p class="itin-desc">The perfect East Africa combo. Begin with thrilling Serengeti game drives and the Ngorongoro Crater, then unwind on the pristine white sand beaches of Zanzibar — snorkelling, spice tours, and Stone Town exploration.</p>
+          <div class="itin-meta">
+            <div class="itin-meta-item"><i class="fas fa-calendar"></i> 10 Days / 9 Nights</div>
+            <div class="itin-meta-item"><i class="fas fa-map-marker-alt"></i> Tanzania + Zanzibar</div>
+            <div class="itin-meta-item"><i class="fas fa-users"></i> 2–10 People</div>
+            <div class="itin-meta-item"><i class="fas fa-star" style="color:var(--gold)"></i> 5.0 Rating</div>
+          </div>
+          <div class="itin-foot">
+            <div class="itin-price">From $3,850 <span>/ per person</span></div>
+            <a href="contact.html" class="btn-gold" style="font-size:.75rem;padding:13px 28px">Book This Safari <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Package 4 -->
+      <div class="itin-card reveal" data-cat="mountain">
+        <div class="itin-img-col">
+          <img src="https://images.unsplash.com/photo-1504150558240-0b4fd8946624?w=800&q=80&auto=format&fit=crop" alt="Kilimanjaro"/>
+          <span class="itin-badge">Adventure</span>
+        </div>
+        <div class="itin-body">
+          <div class="itin-type">Mountain Climbing</div>
+          <h2 class="itin-title">8-Day Kilimanjaro Machame Route Climb</h2>
+          <p class="itin-desc">Conquer Africa's highest peak via the scenic "Whiskey Route" — Machame. Trek through five ecological zones from tropical rainforest to glaciated summit. Expert guides, top equipment, and a 90%+ summit success rate.</p>
+          <div class="itin-meta">
+            <div class="itin-meta-item"><i class="fas fa-calendar"></i> 8 Days / 7 Nights</div>
+            <div class="itin-meta-item"><i class="fas fa-map-marker-alt"></i> Tanzania</div>
+            <div class="itin-meta-item"><i class="fas fa-users"></i> 1–12 People</div>
+            <div class="itin-meta-item"><i class="fas fa-mountain" style="color:var(--gold)"></i> 5,895m Summit</div>
+          </div>
+          <div class="itin-foot">
+            <div class="itin-price">From $1,980 <span>/ per person</span></div>
+            <a href="contact.html" class="btn-gold" style="font-size:.75rem;padding:13px 28px">Book This Climb <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Package 5 -->
+      <div class="itin-card reveal" data-cat="gorilla">
+        <div class="itin-img-col">
+          <img src="https://images.unsplash.com/photo-1565967511849-76a60a516170?w=800&q=80&auto=format&fit=crop" alt="Rwanda Gorillas"/>
+          <span class="itin-badge">Premium</span>
+        </div>
+        <div class="itin-body">
+          <div class="itin-type">Gorilla Trekking</div>
+          <h2 class="itin-title">5-Day Rwanda Gorilla & Golden Monkey Trek</h2>
+          <p class="itin-desc">Rwanda's legendary gorilla experience from Volcanoes National Park. Trek to mountain gorilla families, track the playful golden monkeys, and explore Kigali's vibrant city scene. A compact yet profoundly moving journey.</p>
+          <div class="itin-meta">
+            <div class="itin-meta-item"><i class="fas fa-calendar"></i> 5 Days / 4 Nights</div>
+            <div class="itin-meta-item"><i class="fas fa-map-marker-alt"></i> Rwanda</div>
+            <div class="itin-meta-item"><i class="fas fa-users"></i> 2–8 People</div>
+            <div class="itin-meta-item"><i class="fas fa-star" style="color:var(--gold)"></i> 5.0 Rating</div>
+          </div>
+          <div class="itin-foot">
+            <div class="itin-price">From $2,900 <span>/ per person</span></div>
+            <a href="contact.html" class="btn-gold" style="font-size:.75rem;padding:13px 28px">Book This Safari <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Package 6 -->
+      <div class="itin-card reveal" data-cat="safari">
+        <div class="itin-img-col">
+          <img src="https://images.unsplash.com/photo-1614531341773-3bff15b7f2d3?w=800&q=80&auto=format&fit=crop" alt="Masai Mara"/>
+          <span class="itin-badge">Seasonal</span>
+        </div>
+        <div class="itin-body">
+          <div class="itin-type">Safari & Wildlife</div>
+          <h2 class="itin-title">5-Day Masai Mara Migration Safari</h2>
+          <p class="itin-desc">The world's greatest wildlife show — witness thousands of wildebeest and zebra thunder across the Mara River in Kenya's iconic Masai Mara Reserve. Optimal viewing from July to October during the dramatic crossing season.</p>
+          <div class="itin-meta">
+            <div class="itin-meta-item"><i class="fas fa-calendar"></i> 5 Days / 4 Nights</div>
+            <div class="itin-meta-item"><i class="fas fa-map-marker-alt"></i> Kenya</div>
+            <div class="itin-meta-item"><i class="fas fa-users"></i> 2–10 People</div>
+            <div class="itin-meta-item"><i class="fas fa-star" style="color:var(--gold)"></i> 5.0 Rating</div>
+          </div>
+          <div class="itin-foot">
+            <div class="itin-price">From $1,750 <span>/ per person</span></div>
+            <a href="contact.html" class="btn-gold" style="font-size:.75rem;padding:13px 28px">Book This Safari <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Package 7 -->
+      <div class="itin-card reveal" data-cat="culture">
+        <div class="itin-img-col">
+          <img src="https://images.unsplash.com/photo-1568377995286-363f84b48d36?w=800&q=80&auto=format&fit=crop" alt="Cultural Tour"/>
+          <span class="itin-badge">Cultural</span>
+        </div>
+        <div class="itin-body">
+          <div class="itin-type">Cultural Immersion</div>
+          <h2 class="itin-title">4-Day Maasai & Hadzabe Cultural Experience</h2>
+          <p class="itin-desc">An extraordinary cultural journey — stay overnight with Maasai families, join a dawn hunting expedition with the ancient Hadzabe bushmen, visit a Datoga blacksmith, and discover Lake Eyasi's extraordinary way of life.</p>
+          <div class="itin-meta">
+            <div class="itin-meta-item"><i class="fas fa-calendar"></i> 4 Days / 3 Nights</div>
+            <div class="itin-meta-item"><i class="fas fa-map-marker-alt"></i> Tanzania</div>
+            <div class="itin-meta-item"><i class="fas fa-users"></i> 2–8 People</div>
+            <div class="itin-meta-item"><i class="fas fa-star" style="color:var(--gold)"></i> 4.9 Rating</div>
+          </div>
+          <div class="itin-foot">
+            <div class="itin-price">From $890 <span>/ per person</span></div>
+            <a href="contact.html" class="btn-gold" style="font-size:.75rem;padding:13px 28px">Book This Tour <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Package 8 -->
+      <div class="itin-card reveal" data-cat="safari gorilla beach">
+        <div class="itin-img-col">
+          <img src="images/wildebeest-crossing.jpg" alt="East Africa Grand Tour"/>
+          <span class="itin-badge">Epic Journey</span>
+        </div>
+        <div class="itin-body">
+          <div class="itin-type">Multi-Country Grand Tour</div>
+          <h2 class="itin-title">21-Day East Africa Grand Safari</h2>
+          <p class="itin-desc">The ultimate East African odyssey. Tanzania's Serengeti and Kilimanjaro, Kenya's Masai Mara, Uganda's gorillas and chimpanzees, Rwanda's volcanoes, and a finale on Zanzibar's paradise beaches. The trip of a lifetime.</p>
+          <div class="itin-meta">
+            <div class="itin-meta-item"><i class="fas fa-calendar"></i> 21 Days / 20 Nights</div>
+            <div class="itin-meta-item"><i class="fas fa-map-marker-alt"></i> 4 Countries</div>
+            <div class="itin-meta-item"><i class="fas fa-users"></i> 2–10 People</div>
+            <div class="itin-meta-item"><i class="fas fa-star" style="color:var(--gold)"></i> 5.0 Rating</div>
+          </div>
+          <div class="itin-foot">
+            <div class="itin-price">From $8,900 <span>/ per person</span></div>
+            <a href="contact.html" class="btn-gold" style="font-size:.75rem;padding:13px 28px">Enquire Now <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CUSTOM TRIP CTA -->
+<section style="background:linear-gradient(135deg,var(--gold) 0%,#a07428 100%);padding:80px 0;text-align:center">
+  <div class="container reveal">
+    <h2 style="font-size:2.2rem;color:var(--dark);margin-bottom:14px">Don't See Exactly What You Want?</h2>
+    <p style="font-size:1rem;color:rgba(0,0,0,.65);margin-bottom:35px;max-width:580px;margin-left:auto;margin-right:auto">
+      Every Eascope itinerary can be fully customised. Tell us your dream safari and we'll build it from scratch — any duration, any budget, any destination.
+    </p>
+    <a href="contact.html" class="btn-dark">Build a Custom Safari <i class="fas fa-arrow-right"></i></a>
+  </div>
+</section>
+
+<div class="newsletter">
+  <div class="container">
+    <div class="nws-inner">
+      <div class="nws-text">
+        <h2>Get Special Offers</h2>
+        <p>Early bird deals, seasonal discounts &amp; new itinerary alerts.</p>
+      </div>
+      <form class="nws-form" onsubmit="return false">
+        <input class="nws-input" type="email" placeholder="Your email address" required/>
+        <button class="nws-btn" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-txt"><span class="logo-name">Eascope</span><span class="logo-tag">Expeditions</span></div>
+        <p class="footer-desc">East Africa's premier safari operator crafting extraordinary wildlife and cultural journeys across Tanzania, Kenya, Uganda, and Rwanda.</p>
+        <div class="socials">
+          <a href="#" class="soc-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="soc-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="soc-link"><i class="fab fa-twitter"></i></a>
+          <a href="https://wa.me/255714893326" class="soc-link"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="f-links">
+          <li><a href="itineraries.html"><i class="fas fa-chevron-right"></i> Safari Game Drives</a></li>
+          <li><a href="itineraries.html"><i class="fas fa-chevron-right"></i> Gorilla Trekking</a></li>
+          <li><a href="itineraries.html"><i class="fas fa-chevron-right"></i> Zanzibar Beach</a></li>
+          <li><a href="itineraries.html"><i class="fas fa-chevron-right"></i> Kilimanjaro Climb</a></li>
+          <li><a href="itineraries.html"><i class="fas fa-chevron-right"></i> Cultural Tours</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Destinations</h4>
+        <ul class="f-links">
+          <li><a href="destinations/tanzania.html"><i class="fas fa-chevron-right"></i> Tanzania</a></li>
+          <li><a href="destinations/kenya.html"><i class="fas fa-chevron-right"></i> Kenya</a></li>
+          <li><a href="destinations/uganda.html"><i class="fas fa-chevron-right"></i> Uganda</a></li>
+          <li><a href="destinations/rwanda.html"><i class="fas fa-chevron-right"></i> Rwanda</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="f-contacts">
+          <div class="f-c-item">
+            <div class="f-c-icon"><i class="fas fa-phone-alt"></i></div>
+            <div class="f-c-detail"><strong>Phone / WhatsApp</strong>+255 714 893 326</div>
+          </div>
+          <div class="f-c-item">
+            <div class="f-c-icon"><i class="fas fa-envelope"></i></div>
+            <div class="f-c-detail"><strong>Email</strong>info@eascopeexpeditions.com</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="f-copy">&copy; 2025 <span>Eascope Expeditions</span>. All rights reserved.</p>
+      <div class="f-legal"><a href="#">Privacy</a><a href="#">Terms</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+function filterPackages(btn, cat) {
+  document.querySelectorAll('.filter-btn').forEach(b => {
+    b.style.background = 'transparent';
+    b.style.color = 'var(--text)';
+    b.style.borderColor = 'rgba(0,0,0,.15)';
+  });
+  btn.style.background = 'var(--gold)';
+  btn.style.color = 'var(--dark)';
+  btn.style.borderColor = 'var(--gold)';
+
+  document.querySelectorAll('.itin-card').forEach(card => {
+    if (cat === 'all' || card.dataset.cat.includes(cat)) {
+      card.style.display = 'grid';
+      setTimeout(() => card.style.opacity = '1', 10);
+    } else {
+      card.style.opacity = '0';
+      setTimeout(() => card.style.display = 'none', 300);
+    }
+  });
+}
+</script>
+</body>
+</html>
