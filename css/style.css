@@ -769,3 +769,72 @@ textarea.form-ctrl{height:135px;resize:vertical}
   .tl-item:nth-child(even) .tl-empty{display:none}
   .tl-content{padding:0 16px 40px}
 }
+
+/* ══════════ ATTRACTION PAGES ══════════ */
+.page-hero.hero-full{height:100vh;min-height:620px}
+.page-hero.hero-full .page-hero-cnt{padding-bottom:90px}
+
+/* alternating feature cards */
+.feat-split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-bottom:85px}
+.feat-split:last-child{margin-bottom:0}
+.feat-img{border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-lg);height:430px}
+.feat-img img{width:100%;height:100%;transition:transform .65s ease}
+.feat-split:hover .feat-img img{transform:scale(1.05)}
+.feat-split.flip .feat-img{order:-1}
+.feat-txt h2{font-size:clamp(1.5rem,2.6vw,2rem);color:var(--dark);margin:14px 0 16px}
+.feat-txt p{color:var(--muted);line-height:1.92;font-size:.92rem;margin-bottom:14px}
+
+/* parallax band */
+.parallax-sec{position:relative;background-size:cover;background-position:center;background-attachment:fixed;padding:130px 0;text-align:center}
+.parallax-ov{position:absolute;inset:0;background:var(--overlay)}
+.parallax-cnt{position:relative;z-index:2;color:var(--white);max-width:780px;margin:0 auto;padding:0 24px}
+.parallax-cnt h2{font-size:clamp(1.8rem,3.6vw,2.7rem);margin:16px 0 18px;color:var(--white)}
+.parallax-cnt p{color:rgba(255,255,255,.82);font-size:.98rem;line-height:1.9;margin-bottom:34px}
+.parallax-cnt .sec-eyebrow{justify-content:center}
+
+/* best time / what to expect */
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.bt-row{display:flex;gap:18px;align-items:flex-start;background:var(--white);border-radius:var(--r);padding:20px 22px;margin-bottom:14px;box-shadow:0 6px 24px rgba(0,0,0,.06)}
+.bt-months{min-width:108px;font-size:.72rem;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--primary);background:var(--gold-dim);border-radius:50px;padding:8px 12px;text-align:center}
+.bt-row h4{font-size:.95rem;color:var(--dark);margin-bottom:5px}
+.bt-row p{font-size:.82rem;color:var(--muted);line-height:1.75}
+.expect-item{display:flex;gap:14px;align-items:flex-start;margin-bottom:18px}
+.expect-check{min-width:34px;height:34px;border-radius:50%;background:var(--gold-dim);color:var(--gold);display:flex;align-items:center;justify-content:center;font-size:.8rem}
+.expect-item h4{font-size:.95rem;color:var(--dark);margin-bottom:4px}
+.expect-item p{font-size:.82rem;color:var(--muted);line-height:1.75}
+.enjoy-promise{background:linear-gradient(135deg,var(--primary),var(--dark));border-radius:var(--r-lg);padding:26px 28px;color:rgba(255,255,255,.85);font-size:.88rem;line-height:1.85;margin-top:8px}
+.enjoy-promise strong{color:var(--gold)}
+
+/* mini itinerary sample cards */
+.mini-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+.mini-it{background:var(--white);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow);transition:var(--trans);display:flex;flex-direction:column}
+.mini-it:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg)}
+.mini-it-img{position:relative;height:170px;overflow:hidden}
+.mini-it-img img{width:100%;height:100%;transition:transform .65s ease}
+.mini-it:hover .mini-it-img img{transform:scale(1.08)}
+.mini-it-days{position:absolute;top:14px;left:14px;background:var(--gold);color:var(--dark);font-size:.62rem;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;padding:6px 12px;border-radius:50px}
+.mini-it-body{padding:20px 22px 24px;display:flex;flex-direction:column;flex:1}
+.mini-it-body h3{font-size:.98rem;color:var(--dark);line-height:1.45;margin-bottom:10px}
+.mini-it-price{font-size:.88rem;color:var(--primary);font-weight:800;margin-bottom:14px}
+.mini-it-price span{font-size:.68rem;color:var(--muted);font-weight:500}
+.mini-it .exp-link{margin-top:auto}
+
+/* attraction card cta on destination pages */
+.attr-cta{display:inline-flex;align-items:center;gap:8px;margin-top:14px;color:var(--gold);font-size:.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;transition:var(--trans)}
+.attr-cta:hover{gap:13px;color:var(--gold-light)}
+
+@media (max-width:992px){
+  .mini-grid{grid-template-columns:repeat(2,1fr)}
+  .visit-grid{grid-template-columns:1fr;gap:40px}
+}
+@media (max-width:900px){
+  .feat-split{grid-template-columns:1fr;gap:28px;margin-bottom:60px}
+  .feat-split.flip .feat-img{order:0}
+  .feat-img{height:300px}
+  .parallax-sec{background-attachment:scroll;padding:90px 0}
+}
+@media (max-width:600px){
+  .mini-grid{grid-template-columns:1fr}
+  .bt-row{flex-direction:column;gap:10px}
+  .bt-months{min-width:0;align-self:flex-start}
+}
